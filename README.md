@@ -15,6 +15,6 @@ demandam mais experiência.
 
 ## Índice
 
-1 [Introdução à Lógica de Programação](livro/algoritmos-introducao.md)
-1 [Preparação do Ambiente](livro/preparacao-do-ambiente.md)
-1 [Lógica Binária](livro/logica-binaria.md)
+1. [Introdução à Lógica de Programação](livro/algoritmos-introducao.md)
+1. [Preparação do Ambiente](livro/preparacao-do-ambiente.md)
+1. [Lógica Binária](livro/logica-binaria.md)
