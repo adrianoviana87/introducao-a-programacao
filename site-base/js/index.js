@@ -1,0 +1,11 @@
+definirTitulo('Aula 001')
+
+console.log('isso é um teste')
+console.log('isso é um teste')
+console.log('isso é um teste')
+console.log('isso é um teste')
+console.log('isso é um teste')
+console.log('isso é um teste')
+console.log('isso é um teste\n de várias linhas\nna mesma chamada.')
+console.log('isso é um teste\n\n de várias\n\n\nlinhas\n\n\n\n\nem branco.')
+escrever('usando o método escrever', 'e tal')

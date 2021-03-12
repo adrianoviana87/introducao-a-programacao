@@ -1,0 +1,50 @@
+body {
+  padding-top: 50pt;
+}
+
+#folha-papel {
+  min-height: 90vh;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#folha-papel.linha-visivel .linha {
+  border-bottom: 1pt solid #eeeeee;
+}
+
+#folha-papel.linha-numero-visivel .linha > .linha-numero {
+  width: 30pt;
+  color: #0000004a;
+  text-align: right;
+  padding-right: 5pt;
+}
+
+#folha-papel.linha-visivel.linha-numero-visivel .linha > .linha-numero {
+  border-right: 1pt solid #eee;
+}
+
+#folha-papel.linha-visivel .linha > .linha-conteudo {
+  padding-left: 5pt;
+}
+
+#folha-papel .linha {
+  display: flex;
+  align-items: baseline;
+  justify-content: left;
+}
+
+#folha-papel:not(.linha-numero-visivel) .linha > .linha-numero {
+  visibility: collapse;
+}
+
+#botao-configurar-folha-papel {
+  visibility: hidden;
+}
+
+#botao-configurar-folha-papel > img {
+  height: 10pt;
+}
+
+.folha-papel-container:hover #botao-configurar-folha-papel {
+  visibility: initial;
+}
+

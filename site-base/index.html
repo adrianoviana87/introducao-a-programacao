@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Parte do curso de programação do Adriano Viana">
+    <meta name="author" content="adrianoviana87@gmail.com">
+    <title>Aprendendo a Programar</title>
+    <!-- Bootstrap incluido localmente para facilitar o acesso. -->
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <link href="./css/estilo-base.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-light bg-light">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1" id="titulo-pagina"></span>
+        </div>
+      </nav>
+    </header>
+    <main class="container-md">
+      <section class="folha-papel-container">
+        <!-- <button type="button" id="botao-configurar-folha-papel" class="btn btn-sm btn-outline-secondary"><img src="./assets/icons/gear.svg"></img></button> -->
+      <div class="btn-group" id="botao-configurar-folha-papel">
+        <button class="btn btn-sm btn-outline-secondary btn-sm dropdown-toggle" id="dropdown-configurar-folha-papel" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="./assets/icons/gear.svg"></img>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdown-configurar-folha-papel">
+          <li><a class="dropdown-item" href="#" data-visivel="true" onclick="alternarVisibilidadeLinhas(event)">Ocultar linhas do caderno</a></li>
+          <li><a class="dropdown-item" href="#" data-visivel="true" onclick="alternarVisibilidateNumeroLinhas(event)">Ocultar número de linhas</a></li>
+        </ul>
+      </div>
+        <div id="folha-papel" class="folha-papel linha-visivel linha-numero-visivel shadow p-3 mb-5 bg-body rounded">
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+        <a href="#">Voltar ao topo</a>
+        </p>
+        <p class="mb-1"></p>
+      </div>
+    </footer>
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="./js/base.js"></script>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
+
