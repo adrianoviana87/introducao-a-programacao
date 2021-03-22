@@ -279,26 +279,52 @@ comparação. Ex.: `18 > 17` vai resultar em `true`, `20 < 19` resulta em `false
 | NOT | `false` | | `!false` | `true` |
 | NOT | `true` | | `!true` | `false` |
 
-## Exercício em Javascript
+## Exemplo de uso
 
-Responda o valor das variáveis:
+Segue abaixo um exemplo onde utilizamos valores e expressões lógicas:
 
 ```javascript
-const v1 = true
-const v2 = false
-const v3 = !v1
-const v4 = !v2
-const v5 = 18 > 19
-const v6 = 18 == 18
-const v7 = 18 != 18
-const v8 = 18 < 19
-const v9 = true || false
-const v10 = true && true
-const v11 = 18 > 19 || 20 < 18
-const v12 = 18 == 18 && 17 == 17
-const v13 = v1 || v2
-const v14 = v1 && v2
-const v15 = v2 && 17 == 17 && v1
-const v16 = !(v2 && 17 == 17 && v1)
+v1 = true
+v2 = false
+v3 = v1 || v2
 ```
 
+Agora o mesmo exemplo, porém com a expressão lógica resolvida.
+
+```javascript
+v1 = true
+v2 = false
+v3 = true
+```
+
+### Explicação
+
+`v1` recebe o valor `true`, então o valor de `v1` é simplesmente `true`.
+O mesmo acontece com `v2`, recebe o valor `false` e por isso seu valor é `false`.
+`v3` ao invés de receber o valor literal (`false` ou `true`), recebe uma expressão lógica `OU` (representado por `||` em javascript),
+essa expressão é avaliada e se transforma em um resultado e esse resultado é o que `v3` vai receber.
+A expressão em questão é `v1 || v2`. `v1` contem o valor `true` (previamente definido nas linhas acima), `v2` contem o valor `false`.
+Logo, a expressão vira `true || false`. Sabemos que `true OU false` é igual a `true`. Então `v3` recebe `true`.
+
+### Exercício
+
+Responda qual o valor que cada `v` (`v1, v2, v3`) recebe.
+
+```javascript
+v1 = true
+v2 = false
+v3 = !v1
+v4 = !v2
+v5 = 18 > 19
+v6 = 18 == 18
+v7 = 18 != 18
+v8 = 18 < 19
+v9 = true || false
+v10 = true && true
+v11 = 18 > 19 || 20 < 18
+v12 = 18 == 18 && 17 == 17
+v13 = v1 || v2
+v14 = v1 && v2
+v15 = v2 && 17 == 17 && v1
+v16 = !(v2 && 17 == 17 && v1)
+```
